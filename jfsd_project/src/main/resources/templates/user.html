@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .section h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #4CAF50;
+        }
+
+        /* Job listings table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        td a.apply-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .apply-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Profile section */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            line-height: 1.6;
+        }
+
+        .profile p {
+            font-size: 16px;
+        }
+
+        /* Time tracking */
+        .time-spent {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Student Dashboard
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#job-postings">View Job Postings</a></li>
+            <li><a href="#time-spent">Time Spent</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Job Postings Section -->
+        <div id="job-postings" class="section">
+            <h3>Job Postings</h3>
+            <table>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Software Intern</td>
+                    <td>ABC Corp</td>
+                    <td>New York, NY</td>
+                    <td><a href="#" class="apply-btn">Apply</a></td>
+                </tr>
+                <tr>
+                    <td>Data Analyst</td>
+                    <td>XYZ Solutions</td>
+                    <td>San Francisco, CA</td>
+                    <td><a href="#" class="apply-btn">Apply</a></td>
+                </tr>
+                <tr>
+                    <td>Cloud Engineer</td>
+                    <td>Cloudify Ltd</td>
+                    <td>Remote</td>
+                    <td><a href="#" class="apply-btn">Apply</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Time Spent Section -->
+        <div id="time-spent" class="section">
+            <h3>Time Spent</h3>
+            <p class="time-spent">Total time spent on job applications: 5 hours</p>
+            <p class="time-spent">Total hours worked in internships: 120 hours</p>
+        </div>
+
+        <!-- Profile Section -->
+        <div id="profile" class="section">
+            <h3>Profile</h3>
+            <div class="profile">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@student.com</p>
+                <p><strong>Program:</strong> Cloud & Edge Computing</p>
+                <p><strong>Year:</strong> 3rd Year</p>
+                <p><strong>Skills:</strong> Java, Python, AWS, Data Analysis</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

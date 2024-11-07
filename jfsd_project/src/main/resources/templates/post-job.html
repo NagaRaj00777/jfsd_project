@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Job</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="post-job.html">Post Job</a></li>
+            <li><a href="manage-applications.html">Manage Applications</a></li>
+            <li><a href="track-work-hours.html">Track Work Hours</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" id="logout-button">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Post Job Section -->
+    <section id="post-job">
+        <div class="container">
+            <h2>Post a Work-Study Job</h2>
+            <form id="postJobForm">
+                <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" name="jobTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="skillsRequired">Skills Required</label>
+                    <input type="text" id="skillsRequired" name="skillsRequired" required>
+                </div>
+                <div class="form-group">
+                    <label for="applicationDeadline">Application Deadline</label>
+                    <input type="date" id="applicationDeadline" name="applicationDeadline" required>
+                </div>
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
